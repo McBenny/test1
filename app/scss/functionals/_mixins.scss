@@ -1,65 +1,65 @@
 /* 
-	                                                                                                     
-	                                                                                                     
-	MMMMMMMM               MMMMMMMM  iiii                        iiii                                    
-	M:::::::M             M:::::::M i::::i                      i::::i                                   
-	M::::::::M           M::::::::M  iiii                        iiii                                    
-	M:::::::::M         M:::::::::M                                                                      
-	M::::::::::M       M::::::::::Miiiiiii xxxxxxx      xxxxxxxiiiiiiinnnn  nnnnnnnn        ssssssssss   
-	M:::::::::::M     M:::::::::::Mi:::::i  x:::::x    x:::::x i:::::in:::nn::::::::nn    ss::::::::::s  
-	M:::::::M::::M   M::::M:::::::M i::::i   x:::::x  x:::::x   i::::in::::::::::::::nn ss:::::::::::::s 
-	M::::::M M::::M M::::M M::::::M i::::i    x:::::xx:::::x    i::::inn:::::::::::::::ns::::::ssss:::::s
-	M::::::M  M::::M::::M  M::::::M i::::i     x::::::::::x     i::::i  n:::::nnnn:::::n s:::::s  ssssss 
-	M::::::M   M:::::::M   M::::::M i::::i      x::::::::x      i::::i  n::::n    n::::n   s::::::s      
-	M::::::M    M:::::M    M::::::M i::::i      x::::::::x      i::::i  n::::n    n::::n      s::::::s   
-	M::::::M     MMMMM     M::::::M i::::i     x::::::::::x     i::::i  n::::n    n::::nssssss   s:::::s 
-	M::::::M               M::::::Mi::::::i   x:::::xx:::::x   i::::::i n::::n    n::::ns:::::ssss::::::s
-	M::::::M               M::::::Mi::::::i  x:::::x  x:::::x  i::::::i n::::n    n::::ns::::::::::::::s 
-	M::::::M               M::::::Mi::::::i x:::::x    x:::::x i::::::i n::::n    n::::n s:::::::::::ss  
-	MMMMMMMM               MMMMMMMMiiiiiiiixxxxxxx      xxxxxxxiiiiiiii nnnnnn    nnnnnn  sssssssssss    
-	                                                                                                     
-	                                                                                                     
-	                                                                                                     
-	                                                                                                     
-	                                                                                                     
-	                                                                                                     
-	                                                                                                     
+                                                                                                         
+                                                                                                         
+    MMMMMMMM               MMMMMMMM  iiii                        iiii                                    
+    M:::::::M             M:::::::M i::::i                      i::::i                                   
+    M::::::::M           M::::::::M  iiii                        iiii                                    
+    M:::::::::M         M:::::::::M                                                                      
+    M::::::::::M       M::::::::::Miiiiiii xxxxxxx      xxxxxxxiiiiiiinnnn  nnnnnnnn        ssssssssss   
+    M:::::::::::M     M:::::::::::Mi:::::i  x:::::x    x:::::x i:::::in:::nn::::::::nn    ss::::::::::s  
+    M:::::::M::::M   M::::M:::::::M i::::i   x:::::x  x:::::x   i::::in::::::::::::::nn ss:::::::::::::s 
+    M::::::M M::::M M::::M M::::::M i::::i    x:::::xx:::::x    i::::inn:::::::::::::::ns::::::ssss:::::s
+    M::::::M  M::::M::::M  M::::::M i::::i     x::::::::::x     i::::i  n:::::nnnn:::::n s:::::s  ssssss 
+    M::::::M   M:::::::M   M::::::M i::::i      x::::::::x      i::::i  n::::n    n::::n   s::::::s      
+    M::::::M    M:::::M    M::::::M i::::i      x::::::::x      i::::i  n::::n    n::::n      s::::::s   
+    M::::::M     MMMMM     M::::::M i::::i     x::::::::::x     i::::i  n::::n    n::::nssssss   s:::::s 
+    M::::::M               M::::::Mi::::::i   x:::::xx:::::x   i::::::i n::::n    n::::ns:::::ssss::::::s
+    M::::::M               M::::::Mi::::::i  x:::::x  x:::::x  i::::::i n::::n    n::::ns::::::::::::::s 
+    M::::::M               M::::::Mi::::::i x:::::x    x:::::x i::::::i n::::n    n::::n s:::::::::::ss  
+    MMMMMMMM               MMMMMMMMiiiiiiiixxxxxxx      xxxxxxxiiiiiiii nnnnnn    nnnnnn  sssssssssss    
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
+                                                                                                         
  */
-		/* 
-			888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
-			  88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
-			  88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
-			  88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
-		 */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
 /**
- * 		- CSSWizardry			FIND_CSS_WIZARDRY
- * 			.grid--center		FIND_GRID_CENTER
- * 		- Font-Family 			FIND_FONT_FAMILY
- * 		- font-size rewritten	FIND_FONT_SIZE
- * 		- Border-radius 		FIND_BORDER_RADIUS
+ *      - CSSWizardry           FIND_CSS_WIZARDRY
+ *          .grid--center       FIND_GRID_CENTER
+ *      - Font-Family           FIND_FONT_FAMILY
+ *      - font-size rewritten   FIND_FONT_SIZE
+ *      - Border-radius         FIND_BORDER_RADIUS
  */
 
 
 
 
 
-//	FIND_CSSWIZARDRY
+//  FIND_CSSWIZARDRY
 /* 
-	  /$$$$$$   /$$$$$$   /$$$$$$          /$$      /$$ /$$                                     /$$                    
-	 /$$__  $$ /$$__  $$ /$$__  $$        | $$  /$ | $$|__/                                    | $$                    
-	| $$  \__/| $$  \__/| $$  \__/        | $$ /$$$| $$ /$$ /$$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$   /$$
-	| $$      |  $$$$$$ |  $$$$$$  /$$$$$$| $$/$$ $$ $$| $$|____ /$$/ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$| $$  | $$
-	| $$       \____  $$ \____  $$|______/| $$$$_  $$$$| $$   /$$$$/   /$$$$$$$| $$  \__/| $$  | $$| $$  \__/| $$  | $$
-	| $$    $$ /$$  \ $$ /$$  \ $$        | $$$/ \  $$$| $$  /$$__/   /$$__  $$| $$      | $$  | $$| $$      | $$  | $$
-	|  $$$$$$/|  $$$$$$/|  $$$$$$/        | $$/   \  $$| $$ /$$$$$$$$|  $$$$$$$| $$      |  $$$$$$$| $$      |  $$$$$$$
-	 \______/  \______/  \______/         |__/     \__/|__/|________/ \_______/|__/       \_______/|__/       \____  $$
-	                                                                                                          /$$  | $$
-	                                                                                                         |  $$$$$$/
-	                                                                                                          \______/ 
+      /$$$$$$   /$$$$$$   /$$$$$$          /$$      /$$ /$$                                     /$$                    
+     /$$__  $$ /$$__  $$ /$$__  $$        | $$  /$ | $$|__/                                    | $$                    
+    | $$  \__/| $$  \__/| $$  \__/        | $$ /$$$| $$ /$$ /$$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$   /$$
+    | $$      |  $$$$$$ |  $$$$$$  /$$$$$$| $$/$$ $$ $$| $$|____ /$$/ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$| $$  | $$
+    | $$       \____  $$ \____  $$|______/| $$$$_  $$$$| $$   /$$$$/   /$$$$$$$| $$  \__/| $$  | $$| $$  \__/| $$  | $$
+    | $$    $$ /$$  \ $$ /$$  \ $$        | $$$/ \  $$$| $$  /$$__/   /$$__  $$| $$      | $$  | $$| $$      | $$  | $$
+    |  $$$$$$/|  $$$$$$/|  $$$$$$/        | $$/   \  $$| $$ /$$$$$$$$|  $$$$$$$| $$      |  $$$$$$$| $$      |  $$$$$$$
+     \______/  \______/  \______/         |__/     \__/|__/|________/ \_______/|__/       \_______/|__/       \____  $$
+                                                                                                              /$$  | $$
+                                                                                                             |  $$$$$$/
+                                                                                                              \______/ 
  */
 /**
 * Would you like Sass’ silent classes, or regular CSS classes?
-* 		=> https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L90-L100
+*       => https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L90-L100
 */
 $use-silent-classes: false !default;
 
@@ -68,143 +68,143 @@ $use-silent-classes: false !default;
 /**
 * You do not need to edit anything from this line onward; csswizardry-grids is
 * good to go. Happy griddin’!
-* 		=> https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L146-L156
+*       => https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L146-L156
 */
 $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 
 
 
-//	FIND_GRID_CENTER
-		/* 
-			 dP""b8 88""Yb 88 8888b.            dP""b8 888888 88b 88 888888 888888 88""Yb 
-			dP   `" 88__dP 88  8I  Yb ________ dP   `" 88__   88Yb88   88   88__   88__dP 
-			Yb  "88 88"Yb  88  8I  dY """""""" Yb      88""   88 Y88   88   88""   88"Yb  
-			 YboodP 88  Yb 88 8888Y"            YboodP 888888 88  Y8   88   888888 88  Yb 
-		 */
+//  FIND_GRID_CENTER
+        /* 
+             dP""b8 88""Yb 88 8888b.            dP""b8 888888 88b 88 888888 888888 88""Yb 
+            dP   `" 88__dP 88  8I  Yb ________ dP   `" 88__   88Yb88   88   88__   88__dP 
+            Yb  "88 88"Yb  88  8I  dY """""""" Yb      88""   88 Y88   88   88""   88"Yb  
+             YboodP 88  Yb 88 8888Y"            YboodP 888888 88  Y8   88   888888 88  Yb 
+         */
 /**
 * Centered grids align grid items centrally without needing to use push or pull
 * classes. Extends `.grid`.
-* 		=> https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L296-L306
+*       => https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L296-L306
 */
 #{$class-type}grid--center {
-	text-align:center;
+    text-align:center;
 
-	> #{$class-type}grid__item {
-		text-align:left;
-	}
+    > #{$class-type}grid__item {
+        text-align:left;
+    }
 }
 
 
 
 
 
-//	FIND_FONT_FAMILY
+//  FIND_FONT_FAMILY
 /* 
-	  /$$$$$$                      /$$           /$$$$$$                        /$$ /$$          
-	 /$$__  $$                    | $$          /$$__  $$                      |__/| $$          
-	| $$  \__//$$$$$$  /$$$$$$$  /$$$$$$       | $$  \__//$$$$$$  /$$$$$$/$$$$  /$$| $$ /$$   /$$
-	| $$$$   /$$__  $$| $$__  $$|_  $$_//$$$$$$| $$$$   |____  $$| $$_  $$_  $$| $$| $$| $$  | $$
-	| $$_/  | $$  \ $$| $$  \ $$  | $$ |______/| $$_/    /$$$$$$$| $$ \ $$ \ $$| $$| $$| $$  | $$
-	| $$    | $$  | $$| $$  | $$  | $$ /$$     | $$     /$$__  $$| $$ | $$ | $$| $$| $$| $$  | $$
-	| $$    |  $$$$$$/| $$  | $$  |  $$$$/     | $$    |  $$$$$$$| $$ | $$ | $$| $$| $$|  $$$$$$$
-	|__/     \______/ |__/  |__/   \___/       |__/     \_______/|__/ |__/ |__/|__/|__/ \____  $$
-	                                                                                    /$$  | $$
-	                                                                                   |  $$$$$$/
-	                                                                                    \______/ 
+      /$$$$$$                      /$$           /$$$$$$                        /$$ /$$          
+     /$$__  $$                    | $$          /$$__  $$                      |__/| $$          
+    | $$  \__//$$$$$$  /$$$$$$$  /$$$$$$       | $$  \__//$$$$$$  /$$$$$$/$$$$  /$$| $$ /$$   /$$
+    | $$$$   /$$__  $$| $$__  $$|_  $$_//$$$$$$| $$$$   |____  $$| $$_  $$_  $$| $$| $$| $$  | $$
+    | $$_/  | $$  \ $$| $$  \ $$  | $$ |______/| $$_/    /$$$$$$$| $$ \ $$ \ $$| $$| $$| $$  | $$
+    | $$    | $$  | $$| $$  | $$  | $$ /$$     | $$     /$$__  $$| $$ | $$ | $$| $$| $$| $$  | $$
+    | $$    |  $$$$$$/| $$  | $$  |  $$$$/     | $$    |  $$$$$$$| $$ | $$ | $$| $$| $$|  $$$$$$$
+    |__/     \______/ |__/  |__/   \___/       |__/     \_______/|__/ |__/ |__/|__/|__/ \____  $$
+                                                                                        /$$  | $$
+                                                                                       |  $$$$$$/
+                                                                                        \______/ 
  */
 /**
  * Inserts all the lines necessary to import a font. Just provide the name of the font and the base path and name.
  * 
- * 		@include fontFace("Open Sans", "http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw")
- * 		
- * @param  {string} $family        						The name to use for the font
- * @param  {string} $src           						The base of the file names containing the fonts (full path included but without extension)
- *                                       				Supported exts: eot, woff2, woff, ttf, svg
- * @param  {string} $alternatives:"arial, sans-serif" 	The alternative fonts to provide if the defined font is not available
- * @param  {string} $style:normal  						The style to apply, defaults to "normal"
- * @param  {string} $weight:normal 						The weight to apply, defaults to "normal"
- * @return {string}                						The CSS code to call the police
+ *      @include fontFace("Open Sans", "http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw")
+ *      
+ * @param  {string} $family                             The name to use for the font
+ * @param  {string} $src                                The base of the file names containing the fonts (full path included but without extension)
+ *                                                      Supported exts: eot, woff2, woff, ttf, svg
+ * @param  {string} $alternatives:"arial, sans-serif"   The alternative fonts to provide if the defined font is not available
+ * @param  {string} $style:normal                       The style to apply, defaults to "normal"
+ * @param  {string} $weight:normal                      The weight to apply, defaults to "normal"
+ * @return {string}                                     The CSS code to call the police
  *
  * https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss - 20150817
  */
 @mixin fontFace($family, $src, $alternatives:"arial, sans-serif", $style:normal, $weight:normal) {
-	@font-face {
-		font-family: $family, $alternatives;
-		src: url('#{$src}.eot'); // IE9 compat
-		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
-			 url('#{$src}.woff2') format('woff2'), // standards
-			 url('#{$src}.woff') format('woff'), // standards
-			 url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
-			 url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
-		font-style: $style;
-		font-weight: $weight;
-	}
+    @font-face {
+        font-family: $family, $alternatives;
+        src: url('#{$src}.eot'); // IE9 compat
+        src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+             url('#{$src}.woff2') format('woff2'), // standards
+             url('#{$src}.woff') format('woff'), // standards
+             url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+             url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+        font-style: $style;
+        font-weight: $weight;
+    }
 }
 
 
 
 
 
-//	FIND_FONT_SIZE
+//  FIND_FONT_SIZE
 /* 
-	  /$$$$$$                      /$$      /$$$$$$  /$$                    
-	 /$$__  $$                    | $$     /$$__  $$|__/                    
-	| $$  \__//$$$$$$  /$$$$$$$  /$$$$$$  | $$  \__/ /$$ /$$$$$$$$  /$$$$$$ 
-	| $$$$   /$$__  $$| $$__  $$|_  $$_/  |  $$$$$$ | $$|____ /$$/ /$$__  $$
-	| $$_/  | $$  \ $$| $$  \ $$  | $$     \____  $$| $$   /$$$$/ | $$$$$$$$
-	| $$    | $$  | $$| $$  | $$  | $$ /$$ /$$  \ $$| $$  /$$__/  | $$_____/
-	| $$    |  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$/| $$ /$$$$$$$$|  $$$$$$$
-	|__/     \______/ |__/  |__/   \___/   \______/ |__/|________/ \_______/
-	                                                                        
-	                                                                        
-	                                                                        
+      /$$$$$$                      /$$      /$$$$$$  /$$                    
+     /$$__  $$                    | $$     /$$__  $$|__/                    
+    | $$  \__//$$$$$$  /$$$$$$$  /$$$$$$  | $$  \__/ /$$ /$$$$$$$$  /$$$$$$ 
+    | $$$$   /$$__  $$| $$__  $$|_  $$_/  |  $$$$$$ | $$|____ /$$/ /$$__  $$
+    | $$_/  | $$  \ $$| $$  \ $$  | $$     \____  $$| $$   /$$$$/ | $$$$$$$$
+    | $$    | $$  | $$| $$  | $$  | $$ /$$ /$$  \ $$| $$  /$$__/  | $$_____/
+    | $$    |  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$/| $$ /$$$$$$$$|  $$$$$$$
+    |__/     \______/ |__/  |__/   \___/   \______/ |__/|________/ \_______/
+                                                                            
+                                                                            
+                                                                            
  */
 /**
  * Rewrites original inuit mixin WITHOUT line-height property
  */
 @mixin fontSize($font-size, $line-height: false) {
-	font-size: $font-size;
-	font-size: ($font-size / $inuit-base-font-size) * 1rem;
+    font-size: $font-size;
+    font-size: ($font-size / $inuit-base-font-size) * 1rem;
 }
 
 
 
 
 
-//	FIND_BORDER_RADIUS
+//  FIND_BORDER_RADIUS
 /* 
-	 /$$$$$$$                            /$$                                                      /$$ /$$                    
-	| $$__  $$                          | $$                                                     | $$|__/                    
-	| $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$           /$$$$$$  /$$$$$$   /$$$$$$$ /$$ /$$   /$$  /$$$$$$$
-	| $$$$$$$  /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$$$$$ /$$__  $$|____  $$ /$$__  $$| $$| $$  | $$ /$$_____/
-	| $$__  $$| $$  \ $$| $$  \__/| $$  | $$| $$$$$$$$| $$  \__/|______/| $$  \__/ /$$$$$$$| $$  | $$| $$| $$  | $$|  $$$$$$ 
-	| $$  \ $$| $$  | $$| $$      | $$  | $$| $$_____/| $$              | $$      /$$__  $$| $$  | $$| $$| $$  | $$ \____  $$
-	| $$$$$$$/|  $$$$$$/| $$      |  $$$$$$$|  $$$$$$$| $$              | $$     |  $$$$$$$|  $$$$$$$| $$|  $$$$$$/ /$$$$$$$/
-	|_______/  \______/ |__/       \_______/ \_______/|__/              |__/      \_______/ \_______/|__/ \______/ |_______/ 
-	                                                                                                                         
-	                                                                                                                         
-	                                                                                                                         
+     /$$$$$$$                            /$$                                                      /$$ /$$                    
+    | $$__  $$                          | $$                                                     | $$|__/                    
+    | $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$           /$$$$$$  /$$$$$$   /$$$$$$$ /$$ /$$   /$$  /$$$$$$$
+    | $$$$$$$  /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$$$$$ /$$__  $$|____  $$ /$$__  $$| $$| $$  | $$ /$$_____/
+    | $$__  $$| $$  \ $$| $$  \__/| $$  | $$| $$$$$$$$| $$  \__/|______/| $$  \__/ /$$$$$$$| $$  | $$| $$| $$  | $$|  $$$$$$ 
+    | $$  \ $$| $$  | $$| $$      | $$  | $$| $$_____/| $$              | $$      /$$__  $$| $$  | $$| $$| $$  | $$ \____  $$
+    | $$$$$$$/|  $$$$$$/| $$      |  $$$$$$$|  $$$$$$$| $$              | $$     |  $$$$$$$|  $$$$$$$| $$|  $$$$$$/ /$$$$$$$/
+    |_______/  \______/ |__/       \_______/ \_______/|__/              |__/      \_______/ \_______/|__/ \______/ |_______/ 
+                                                                                                                             
+                                                                                                                             
+                                                                                                                             
  */
 /**
  * The mixin produces the different versions of "border-radius" to fit with different the vendors prefixes.
  * Usage:
- * 		p {@include border-radius;}							// produces 4 rounded corners to the default radius value.
- * 		p {@include border-radius(20px);}					// produces 4 rounded corners of 20px radius each.
- * 		p {@include border-radius(20px, 20px, 0, 0);}		// produces 2 rounded corners (top-left and top-right) of 20 px radius each and sharp other corners.
- * 		p {@include border-radius(20px, 50px);}				// produces 4 rounded corners top-left/bottom-right being identical (20px) and top-right/bottom-left identical (50px).
- * 		p {@include border-radius(5px 20px);}				// produces 4 rounded corners with different radix between horizontal (5px) and vertical axis (20px).
+ *      p {@include border-radius;}                         // produces 4 rounded corners to the default radius value.
+ *      p {@include border-radius(20px);}                   // produces 4 rounded corners of 20px radius each.
+ *      p {@include border-radius(20px, 20px, 0, 0);}       // produces 2 rounded corners (top-left and top-right) of 20 px radius each and sharp other corners.
+ *      p {@include border-radius(20px, 50px);}             // produces 4 rounded corners top-left/bottom-right being identical (20px) and top-right/bottom-left identical (50px).
+ *      p {@include border-radius(5px 20px);}               // produces 4 rounded corners with different radix between horizontal (5px) and vertical axis (20px).
  */
 @mixin border-radius($topLeft: $brand-round, $topRight: $topLeft, $bottomRight: $topLeft, $bottomLeft: $topRight) {
-	-webkit-border-top-left-radius:		$topLeft;
-	-webkit-border-top-right-radius:	$topRight;
-	-webkit-border-bottom-right-radius:	$bottomRight;
-	-webkit-border-bottom-left-radius:	$bottomLeft;
-	-moz-border-radius-topleft:			$topLeft;
-	-moz-border-radius-topright:		$topRight;
-	-moz-border-radius-bottomright:		$bottomRight;
-	-moz-border-radius-bottomleft:		$bottomLeft;
-	border-top-left-radius:				$topLeft;
-	border-top-right-radius:			$topRight;
-	border-bottom-right-radius:			$bottomRight;
-	border-bottom-left-radius:			$bottomLeft;
+    -webkit-border-top-left-radius:     $topLeft;
+    -webkit-border-top-right-radius:    $topRight;
+    -webkit-border-bottom-right-radius: $bottomRight;
+    -webkit-border-bottom-left-radius:  $bottomLeft;
+    -moz-border-radius-topleft:         $topLeft;
+    -moz-border-radius-topright:        $topRight;
+    -moz-border-radius-bottomright:     $bottomRight;
+    -moz-border-radius-bottomleft:      $bottomLeft;
+    border-top-left-radius:             $topLeft;
+    border-top-right-radius:            $topRight;
+    border-bottom-right-radius:         $bottomRight;
+    border-bottom-left-radius:          $bottomLeft;
 }

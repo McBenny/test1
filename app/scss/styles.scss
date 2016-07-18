@@ -210,3 +210,5 @@
 @import "pagination";                               // A set of classes related to any pagination system
 @import "socials";                                  // Classes related to social networks, either links of tools
 @import "plugins";                                  // Classes dedicated to elements manipulated or created by JS plugins
+
+@import "specific-page";                            // If a page needs a specifi set of styles, create a specific style sheet

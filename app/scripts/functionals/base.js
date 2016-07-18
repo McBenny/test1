@@ -1,43 +1,43 @@
 /*
-																			  
-																			  
-	BBBBBBBBBBBBBBBBB                                                         
-	B::::::::::::::::B                                                        
-	B::::::BBBBBB:::::B                                                       
-	BB:::::B     B:::::B                                                      
-	  B::::B     B:::::B  aaaaaaaaaaaaa      ssssssssss       eeeeeeeeeeee    
-	  B::::B     B:::::B  a::::::::::::a   ss::::::::::s    ee::::::::::::ee  
-	  B::::BBBBBB:::::B   aaaaaaaaa:::::ass:::::::::::::s  e::::::eeeee:::::ee
-	  B:::::::::::::BB             a::::as::::::ssss:::::se::::::e     e:::::e
-	  B::::BBBBBB:::::B     aaaaaaa:::::a s:::::s  ssssss e:::::::eeeee::::::e
-	  B::::B     B:::::B  aa::::::::::::a   s::::::s      e:::::::::::::::::e 
-	  B::::B     B:::::B a::::aaaa::::::a      s::::::s   e::::::eeeeeeeeeee  
-	  B::::B     B:::::Ba::::a    a:::::assssss   s:::::s e:::::::e           
-	BB:::::BBBBBB::::::Ba::::a    a:::::as:::::ssss::::::se::::::::e          
-	B:::::::::::::::::B a:::::aaaa::::::as::::::::::::::s  e::::::::eeeeeeee  
-	B::::::::::::::::B   a::::::::::aa:::as:::::::::::ss    ee:::::::::::::e  
-	BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaa sssssssssss        eeeeeeeeeeeeee  
-																			  
-																			  
-																			  
-																			  
-																			  
-																			  
-																			  
+                                                                              
+                                                                              
+    BBBBBBBBBBBBBBBBB                                                         
+    B::::::::::::::::B                                                        
+    B::::::BBBBBB:::::B                                                       
+    BB:::::B     B:::::B                                                      
+      B::::B     B:::::B  aaaaaaaaaaaaa      ssssssssss       eeeeeeeeeeee    
+      B::::B     B:::::B  a::::::::::::a   ss::::::::::s    ee::::::::::::ee  
+      B::::BBBBBB:::::B   aaaaaaaaa:::::ass:::::::::::::s  e::::::eeeee:::::ee
+      B:::::::::::::BB             a::::as::::::ssss:::::se::::::e     e:::::e
+      B::::BBBBBB:::::B     aaaaaaa:::::a s:::::s  ssssss e:::::::eeeee::::::e
+      B::::B     B:::::B  aa::::::::::::a   s::::::s      e:::::::::::::::::e 
+      B::::B     B:::::B a::::aaaa::::::a      s::::::s   e::::::eeeeeeeeeee  
+      B::::B     B:::::Ba::::a    a:::::assssss   s:::::s e:::::::e           
+    BB:::::BBBBBB::::::Ba::::a    a:::::as:::::ssss::::::se::::::::e          
+    B:::::::::::::::::B a:::::aaaa::::::as::::::::::::::s  e::::::::eeeeeeee  
+    B::::::::::::::::B   a::::::::::aa:::as:::::::::::ss    ee:::::::::::::e  
+    BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaa sssssssssss        eeeeeeeeeeeeee  
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
+                                                                              
 */
-		/* 
-			888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
-			  88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
-			  88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
-			  88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
-		 */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
 /**
- * 		- Handling environment	FIND_ENV
- * 			.Console			FIND_CONSOLE
- * 			.Variables			FIND_VARS
- * 		 	.Translations		FIND_TRANSLATIONS
- * 		- Public return 		FIND_PUBLIC
- * 		
+ *      - Handling environment  FIND_ENV
+ *          .Console            FIND_CONSOLE
+ *          .Variables          FIND_VARS
+ *          .Translations       FIND_TRANSLATIONS
+ *      - Public return         FIND_PUBLIC
+ *      
  */
 
 /**
@@ -47,53 +47,53 @@
 
 
 
-//	FIND_ENV
+//  FIND_ENV
 /*
-	 /$$$$$$$$                      /$$                                                                   /$$    
-	| $$_____/                     |__/                                                                  | $$    
-	| $$       /$$$$$$$  /$$    /$$ /$$  /$$$$$$   /$$$$$$  /$$$$$$$  /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$$$$$  
-	| $$$$$   | $$__  $$|  $$  /$$/| $$ /$$__  $$ /$$__  $$| $$__  $$| $$_  $$_  $$ /$$__  $$| $$__  $$|_  $$_/  
-	| $$__/   | $$  \ $$ \  $$/$$/ | $$| $$  \__/| $$  \ $$| $$  \ $$| $$ \ $$ \ $$| $$$$$$$$| $$  \ $$  | $$    
-	| $$      | $$  | $$  \  $$$/  | $$| $$      | $$  | $$| $$  | $$| $$ | $$ | $$| $$_____/| $$  | $$  | $$ /$$
-	| $$$$$$$$| $$  | $$   \  $/   | $$| $$      |  $$$$$$/| $$  | $$| $$ | $$ | $$|  $$$$$$$| $$  | $$  |  $$$$/
-	|________/|__/  |__/    \_/    |__/|__/       \______/ |__/  |__/|__/ |__/ |__/ \_______/|__/  |__/   \___/  
-																												 
-																												 
-																												 
+     /$$$$$$$$                      /$$                                                                   /$$    
+    | $$_____/                     |__/                                                                  | $$    
+    | $$       /$$$$$$$  /$$    /$$ /$$  /$$$$$$   /$$$$$$  /$$$$$$$  /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$$$$$  
+    | $$$$$   | $$__  $$|  $$  /$$/| $$ /$$__  $$ /$$__  $$| $$__  $$| $$_  $$_  $$ /$$__  $$| $$__  $$|_  $$_/  
+    | $$__/   | $$  \ $$ \  $$/$$/ | $$| $$  \__/| $$  \ $$| $$  \ $$| $$ \ $$ \ $$| $$$$$$$$| $$  \ $$  | $$    
+    | $$      | $$  | $$  \  $$$/  | $$| $$      | $$  | $$| $$  | $$| $$ | $$ | $$| $$_____/| $$  | $$  | $$ /$$
+    | $$$$$$$$| $$  | $$   \  $/   | $$| $$      |  $$$$$$/| $$  | $$| $$ | $$ | $$|  $$$$$$$| $$  | $$  |  $$$$/
+    |________/|__/  |__/    \_/    |__/|__/       \______/ |__/  |__/|__/ |__/ |__/ \_______/|__/  |__/   \___/  
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
 */
-//	FIND_CONSOLE
-		/*
-			 dP""b8  dP"Yb  88b 88 .dP"Y8  dP"Yb  88     888888 
-			dP   `" dP   Yb 88Yb88 `Ybo." dP   Yb 88     88__   
-			Yb      Yb   dP 88 Y88 o.`Y8b Yb   dP 88  .o 88""   
-			 YboodP  YbodP  88  Y8 8bodP'  YbodP  88ood8 888888 
-		*/
+//  FIND_CONSOLE
+        /*
+             dP""b8  dP"Yb  88b 88 .dP"Y8  dP"Yb  88     888888 
+            dP   `" dP   Yb 88Yb88 `Ybo." dP   Yb 88     88__   
+            Yb      Yb   dP 88 Y88 o.`Y8b Yb   dP 88  .o 88""   
+             YboodP  YbodP  88  Y8 8bodP'  YbodP  88ood8 888888 
+        */
 /**
  * @description Protect window.console method calls, e.g. console is not defined on IE unless dev tools are open, and IE doesn't define console.debug
- * @author [Vinicius Moraes - http://stackoverflow.com/users/2274855/vin%c3%adcius-moraes]	http://stackoverflow.com/questions/3326650/console-is-undefined-error-for-internet-explorer/1691694
+ * @author [Vinicius Moraes - http://stackoverflow.com/users/2274855/vin%c3%adcius-moraes]  http://stackoverflow.com/questions/3326650/console-is-undefined-error-for-internet-explorer/1691694
  */
 (function () {
-	var method,
-		methods = [
-			"assert", "clear", "count", "debug", "dir", "dirxml", "error",
-			"exception", "group", "groupCollapsed", "groupEnd", "info", "log",
-			"markTimeline", "profile", "profileEnd", "table", "time", "timeEnd",
-			"timeStamp", "trace", "warn"
-		],
-		length = methods.length,
-		noop = function () {
-			return true;
-		},
-		console = (window.console = window.console || {});
+    var method,
+        methods = [
+            "assert", "clear", "count", "debug", "dir", "dirxml", "error",
+            "exception", "group", "groupCollapsed", "groupEnd", "info", "log",
+            "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd",
+            "timeStamp", "trace", "warn"
+        ],
+        length = methods.length,
+        noop = function () {
+            return true;
+        },
+        console = (window.console = window.console || {});
 
-	while (length--) {
-		method = methods[length];
+    while (length--) {
+        method = methods[length];
 
 // Only stub undefined methods.
-		if (!console[method]) {
-			console[method] = noop;
-		}
-	}
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
 }());
 
 
@@ -102,70 +102,70 @@ var _base = function () {
 
 
 
-//	FIND_VARS
-		/*
-			Yb    dP    db    88""Yb 88    db    88""Yb 88     888888 .dP"Y8 
-			 Yb  dP    dPYb   88__dP 88   dPYb   88__dP 88     88__   `Ybo." 
-			  YbdP    dP__Yb  88"Yb  88  dP__Yb  88""Yb 88  .o 88""   o.`Y8b 
-			   YP    dP""""Yb 88  Yb 88 dP""""Yb 88oodP 88ood8 888888 8bodP' 
-		*/
+//  FIND_VARS
+        /*
+            Yb    dP    db    88""Yb 88    db    88""Yb 88     888888 .dP"Y8 
+             Yb  dP    dPYb   88__dP 88   dPYb   88__dP 88     88__   `Ybo." 
+              YbdP    dP__Yb  88"Yb  88  dP__Yb  88""Yb 88  .o 88""   o.`Y8b 
+               YP    dP""""Yb 88  Yb 88 dP""""Yb 88oodP 88ood8 888888 8bodP' 
+        */
 /**
  * html: a shortcut to access DOM
  * customData: a var where you can store any var you need, push any content inside and retrieve it elsewhere
  * pageLng: the language of the page from the HTML lang attribute or "default"
  * @type {[type]}
  */
-	var vars = {
-		html: $("html"),
-		customData: {},
-		pageLng: $("html").attr("lang") !== undefined && $("html").attr("lang") !== "" ? $("html").attr("lang") : "default",
-		touch: false,
-		socials: {
-			instagram: {
-				client_id: '',
-				tagname: '',
-				count: 20
-			}
-		}
-	},
+    var vars = {
+        html: $("html"),
+        customData: {},
+        pageLng: $("html").attr("lang") !== undefined && $("html").attr("lang") !== "" ? $("html").attr("lang") : "default",
+        touch: false,
+        socials: {
+            instagram: {
+                client_id: '',
+                tagname: '',
+                count: 20
+            }
+        }
+    },
 
 
 
-//	FIND_TRANSLATIONS
-		/*
-			888888 88""Yb    db    88b 88 .dP"Y8 88        db    888888 88  dP"Yb  88b 88 .dP"Y8 
-			  88   88__dP   dPYb   88Yb88 `Ybo." 88       dPYb     88   88 dP   Yb 88Yb88 `Ybo." 
-			  88   88"Yb   dP__Yb  88 Y88 o.`Y8b 88  .o  dP__Yb    88   88 Yb   dP 88 Y88 o.`Y8b 
-			  88   88  Yb dP""""Yb 88  Y8 8bodP' 88ood8 dP""""Yb   88   88  YbodP  88  Y8 8bodP' 
-		*/
-	translations = {
-		default: {
-			close: "close",
-			loading: "loading"
-		},
-		en: {
-			close: "close",
-			loading: "loading"
-		},
-		fr: {
-			close: "fermer",
-			loading: "chargement en cours"
-		}
-	};
+//  FIND_TRANSLATIONS
+        /*
+            888888 88""Yb    db    88b 88 .dP"Y8 88        db    888888 88  dP"Yb  88b 88 .dP"Y8 
+              88   88__dP   dPYb   88Yb88 `Ybo." 88       dPYb     88   88 dP   Yb 88Yb88 `Ybo." 
+              88   88"Yb   dP__Yb  88 Y88 o.`Y8b 88  .o  dP__Yb    88   88 Yb   dP 88 Y88 o.`Y8b 
+              88   88  Yb dP""""Yb 88  Y8 8bodP' 88ood8 dP""""Yb   88   88  YbodP  88  Y8 8bodP' 
+        */
+    translations = {
+        default: {
+            close: "close",
+            loading: "loading"
+        },
+        en: {
+            close: "close",
+            loading: "loading"
+        },
+        fr: {
+            close: "fermer",
+            loading: "chargement en cours"
+        }
+    };
 
 
 
 
 
-//	FIND_PUBLIC
-		/*
-			88""Yb 888888 888888 88   88 88""Yb 88b 88 
-			88__dP 88__     88   88   88 88__dP 88Yb88 
-			88"Yb  88""     88   Y8   8P 88"Yb  88 Y88 
-			88  Yb 888888   88   `YbodP' 88  Yb 88  Y8 
-		*/
-	return {
-		vars: vars,
-		translations: translations
-	};
+//  FIND_PUBLIC
+        /*
+            88""Yb 888888 888888 88   88 88""Yb 88b 88 
+            88__dP 88__     88   88   88 88__dP 88Yb88 
+            88"Yb  88""     88   Y8   8P 88"Yb  88 Y88 
+            88  Yb 888888   88   `YbodP' 88  Yb 88  Y8 
+        */
+    return {
+        vars: vars,
+        translations: translations
+    };
 }();

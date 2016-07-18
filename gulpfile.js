@@ -38,13 +38,83 @@ var gulp = require('gulp'),
 
 
 /*
+       db    .dP"Y8 .dP"Y8 888888 888888 .dP"Y8
+      dPYb   `Ybo." `Ybo." 88__     88   `Ybo."
+     dP__Yb  o.`Y8b o.`Y8b 88""     88   o.`Y8b
+    dP""""Yb 8bodP' 8bodP' 888888   88   8bodP'
+*/
+gulp.task('assets:copy', function () {
+    return gulp.src(['./app/assets/**/*'])
+        .pipe(gulp.dest('./public'));
+});
+gulp.task('assets', function () {
+    gulp.watch(['app/assets/**/*'], ['assets:copy']);
+    console.log('       Assets watch running...');
+    console.log('       Ctrl + C to stop.');
+});
+
+
+
+/*
+     88888 .dP"Y8     888888    db    .dP"Y8 88  dP .dP"Y8
+        88 `Ybo."       88     dPYb   `Ybo." 88odP  `Ybo."
+    o.  88 o.`Y8b       88    dP__Yb  o.`Y8b 88"Yb  o.`Y8b
+    "bodP' 8bodP'       88   dP""""Yb 8bodP' 88  Yb 8bodP'
+*/
+gulp.task('js:vendors', function () {
+    return gulp.src(['bower_components/jquery/dist/jquery.js', './vendor/scripts/*.js'])
+        .pipe(sourcemaps.init())
+        .pipe(concat('vendors.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./public/scripts'));
+});
+
+gulp.task('js:compile', function () {
+    return gulp.src(
+            [
+                './app/scripts/functionals/base.js',
+                './app/scripts/functionals/helpers.js',
+                './app/scripts/functionals/functions.js',
+                './app/scripts/general.js',
+                './app/scripts/appart.js',
+                './app/scripts/**/*.js'
+            ]
+        )
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.js'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./public/scripts'));
+});
+gulp.task('js:uglify', ['js:vendors', 'js:compile'], function (cb) {
+    pump(
+        [
+            gulp.src(['./public/scripts/**/*.js', '!./public/scripts/**/*.min.js']),
+            rename({
+                suffix: '.min'
+            }),
+            uglify(),
+            gulp.dest('./public/scripts')
+        ], cb
+    );
+});
+
+gulp.task('js', function () {
+    gulp.watch(['app/scripts/**/*.js'], ['js:vendors', 'js:compile']);
+    console.log('       Js watch running...');
+    console.log('       Ctrl + C to stop.');
+});
+gulp.task('js:prod', ['js:uglify'], function () {});
+
+
+
+/*
     .dP"Y8    db    .dP"Y8 .dP"Y8     888888    db    .dP"Y8 88  dP .dP"Y8
     `Ybo."   dPYb   `Ybo." `Ybo."       88     dPYb   `Ybo." 88odP  `Ybo."
     o.`Y8b  dP__Yb  o.`Y8b o.`Y8b       88    dP__Yb  o.`Y8b 88"Yb  o.`Y8b
     8bodP' dP""""Yb 8bodP' 8bodP'       88   dP""""Yb 8bodP' 88  Yb 8bodP'
 */
 gulp.task('sass:compile', function () {
-    return gulp.src(['./app/scss/**/*.scss', './app/scss/*.scss'])
+    return gulp.src(['./app/scss/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
@@ -63,63 +133,12 @@ gulp.task('sass:minify', ['sass:compile'], function () {
 });
 
 gulp.task('sass', function () {
-    gulp.watch(['./app/scss/*.scss', './app/scss/**/*.scss'], ['sass:compile']);
+    gulp.watch(['app/scss/*.scss', './app/scss/**/*.scss'], ['sass:compile']);
     console.log('       Sass watch running...');
     console.log('       Ctrl + C to stop.');
 });
 
 gulp.task('sass:prod', ['sass:minify'], function () {});
-
-
-
-/*
-     88888 .dP"Y8     888888    db    .dP"Y8 88  dP .dP"Y8
-        88 `Ybo."       88     dPYb   `Ybo." 88odP  `Ybo."
-    o.  88 o.`Y8b       88    dP__Yb  o.`Y8b 88"Yb  o.`Y8b
-    "bodP' 8bodP'       88   dP""""Yb 8bodP' 88  Yb 8bodP'
-*/
-gulp.task('js:vendors', function () {
-    return gulp.src(['./bower_components/jquery/dist/jquery.js', './vendor/scripts/*.js'])
-        .pipe(sourcemaps.init())
-        .pipe(concat('vendors.js'))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./public/scripts'));
-});
-
-gulp.task('js:compile', function () {
-    return gulp.src(
-            [
-                './app/scripts/functionals/base.js',
-                './app/scripts/functionals/helpers.js',
-                './app/scripts/functionals/functions.js',
-                './app/scripts/general.js',
-                './app/scripts/appart.js'
-            ]
-        )
-        .pipe(sourcemaps.init())
-        .pipe(concat('main.js'))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./public/scripts'));
-});
-gulp.task('js:uglify', ['js:vendors', 'js:compile'], function (cb) {
-    pump(
-        [
-            gulp.src(['./public/scripts/*.js', '!./public/scripts/*.min.js']),
-            rename({
-                suffix: '.min'
-            }),
-            uglify(),
-            gulp.dest('./public/scripts')
-        ], cb
-    );
-});
-
-gulp.task('js', function () {
-    gulp.watch(['./app/scripts/*.js'], ['js:vendors', 'js:compile']);
-    console.log('       Js watch running...');
-    console.log('       Ctrl + C to stop.');
-});
-gulp.task('js:prod', ['js:uglify'], function () {});
 
 
 
@@ -137,8 +156,9 @@ gulp.task('prod', ['js:prod', 'sass:prod'], function () {
     console.log('    - Concatenating Javascripts and minifying.');
 });
 
-gulp.task('default', ['js', 'sass'], function () {
+gulp.task('default', ['assets', 'js', 'sass'], function () {
     console.log('Default task running...');
+    console.log('    - Assets watching,');
     console.log('    - Sass watching,');
     console.log('    - Javascript watching');
 });
