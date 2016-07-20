@@ -33,7 +33,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
-    pump = require('pump');
+    pump = require('pump'),
+    livereload = require('gulp-livereload');
 
 
 
@@ -45,7 +46,8 @@ var gulp = require('gulp'),
 */
 gulp.task('assets:copy', function () {
     return gulp.src(['./app/assets/**/*'])
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('./public'))
+        .pipe(livereload());
 });
 gulp.task('assets', function () {
     gulp.watch(['app/assets/**/*'], ['assets:copy']);
@@ -83,7 +85,8 @@ gulp.task('js:compile', function () {
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./public/scripts'));
+        .pipe(gulp.dest('./public/scripts'))
+        .pipe(livereload());
 });
 gulp.task('js:uglify', ['js:vendors', 'js:compile'], function (cb) {
     pump(
@@ -118,7 +121,8 @@ gulp.task('sass:compile', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./public/css'))
+        .pipe(livereload());
 });
 
 gulp.task('sass:minify', ['sass:compile'], function () {
@@ -133,7 +137,7 @@ gulp.task('sass:minify', ['sass:compile'], function () {
 });
 
 gulp.task('sass', function () {
-    gulp.watch(['app/scss/*.scss', './app/scss/**/*.scss'], ['sass:compile']);
+    gulp.watch(['./app/scss/**/*.scss'], ['sass:compile']);
     console.log('       Sass watch running...');
     console.log('       Ctrl + C to stop.');
 });
@@ -157,6 +161,9 @@ gulp.task('prod', ['js:prod', 'sass:prod'], function () {
 });
 
 gulp.task('default', ['assets', 'js', 'sass'], function () {
+    livereload.listen({
+        reloadPage: "index.php"
+    });
     console.log('Default task running...');
     console.log('    - Assets watching,');
     console.log('    - Sass watching,');
