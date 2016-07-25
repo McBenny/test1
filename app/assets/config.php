@@ -284,7 +284,7 @@ $socials = array(
 $head__css__prepend = array();
 $head__css__list = array(
     array(
-        'path' => $path.'/css/styles.min.css',
+        'path' => $path.'/css/styles.css',
         'media' => 'screen'
     )
 );

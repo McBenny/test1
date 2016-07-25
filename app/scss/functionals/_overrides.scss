@@ -45,8 +45,8 @@
 // High-level base settings.
 $inuit-base-font-size:          18px;
 $inuit-base-line-height:        1.5 * $inuit-base-font-size;
-$inuit-base-text-color:         #00f;
-$inuit-base-background-color:   #ccc;
+$inuit-base-text-color:         #222;
+$inuit-base-background-color:   #fff;
 
 
 
@@ -70,3 +70,154 @@ $inuit-base-background-color:   #ccc;
 // $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 // $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 // $inuit-base-spacing-unit--huge:     round($inuit-base-spacing-unit * 4);
+
+
+
+
+
+// Spacing      trumps.spacing
+$inuit-enable-margins: true;
+$inuit-enable-margins--tiny: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--huge: true;
+$inuit-enable-margins--none: true;
+$inuit-enable-margins--negative: true;
+
+$inuit-enable-paddings: true;
+$inuit-enable-paddings--tiny: true;
+$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--large: true;
+$inuit-enable-paddings--huge: true;
+$inuit-enable-paddings--none: true;
+
+
+
+// table        objects.tables
+$inuit-enable-table--fixed: true;
+$inuit-enable-table--compact: true;
+$inuit-enable-table--cosy: true;
+$inuit-enable-table--comfy: true;
+$inuit-enable-table--cells: true;
+$inuit-enable-table--rows: true;
+$inuit-enable-table--columns: true;
+
+
+
+// Layout       objects.layout
+$inuit-enable-layout--tiny: true;
+$inuit-enable-layout--small: true;
+$inuit-enable-layout--large: true;
+$inuit-enable-layout--huge: true;
+$inuit-enable-layout--flush: true;
+$inuit-enable-layout--rev: true;
+$inuit-enable-layout--middle: true;
+$inuit-enable-layout--bottom: true;
+$inuit-enable-layout--right: true;
+$inuit-enable-layout--center: true;
+$inuit-enable-layout--auto: true;
+
+
+
+// Block        objects.block
+$inuit-enable-block--flush: true;
+$inuit-enable-block--tiny: true;
+$inuit-enable-block--small: true;
+$inuit-enable-block--large: true;
+$inuit-enable-block--huge: true;
+$inuit-enable-block--right: true;
+$inuit-enable-block--center: true;
+
+
+
+// Pack         objects.pack
+$inuit-enable-pack--middle: true;   // aligns vertical middle
+$inuit-enable-pack--bottom: true;   // aligns vertical bottom
+$inuit-enable-pack--auto: true;     // different sizes
+$inuit-enable-pack--tiny: true;     // enables tiny gutters between items
+$inuit-enable-pack--small: true;    // enables small gutters between items
+$inuit-enable-pack--large: true;    // enables large gutters between items
+$inuit-enable-pack--huge: true;     // enables huge gutters between items
+$inuit-enable-pack--rev: true;      // reverses the order of the items
+
+
+
+// List-inline  objects.list-inline
+$inuit-enable-list-inline--delimited: true;     // allows the use of a delimiter ($inuit-list-inline-delimit-character)
+$inuit-list-inline-delimit-character: "-*-";
+
+
+
+// List-ui      objects.list-ui
+$inuit-enable-list-ui--tiny: true;
+$inuit-enable-list-ui--small: true;
+$inuit-enable-list-ui--large: true;
+$inuit-enable-list-ui--huge: true;
+
+
+
+// List-block   objects.list-block
+$inuit-enable-list-block--tiny: true;
+$inuit-enable-list-block--small: true;
+$inuit-enable-list-block--large: true;
+$inuit-enable-list-block--huge: true;
+
+
+
+// Widths       trumps.widths / trumps.widths-responsive
+$inuit-widths-columns: (1, 2, 3, 4, 5, 6, 7, 8);
+$inuit-widths-columns-responsive: (1, 2, 3, 4, 5, 6, 7, 8);
+
+
+
+// Media        objects.media
+$inuit-enable-media--tiny: true;
+$inuit-enable-media--small: true;
+$inuit-enable-media--large: true;
+$inuit-enable-media--huge: true;
+$inuit-enable-media--rev: true;
+$inuit-enable-media--flush: true;
+$inuit-enable-media--responsive: true;
+$inuit-media-collapse-at: 640px;
+
+
+
+// Flag         objects.flag
+$inuit-enable-flag--tiny: true;
+$inuit-enable-flag--small: true;
+$inuit-enable-flag--large: true;
+$inuit-enable-flag--huge: true;
+$inuit-enable-flag--rev: true;
+$inuit-enable-flag--flush: true;
+$inuit-enable-flag--top: true;
+$inuit-enable-flag--bottom: true;
+$inuit-enable-flag--responsive: true;
+$inuit-flag-collapse-at: 640px;
+
+
+
+// Box         objects.box
+$inuit-enable-box--tiny: true;
+$inuit-enable-box--small: true;
+$inuit-enable-box--large: true;
+$inuit-enable-box--huge: true;
+$inuit-enable-box--flush: true;
+
+
+
+// Buttons     objects.buttons
+$inuit-enable-btn--small: true;
+$inuit-enable-btn--large: true;
+$inuit-enable-btn--full: true;
+$inuit-enable-btn--pill: true;
+
+
+
+
+
+
+
+
+
+
+

@@ -124,9 +124,9 @@
 @import "../../bower_components/inuit-list-bare/objects.list-bare";
 @import "../../bower_components/inuit-list-inline/objects.list-inline";
 @import "../../bower_components/inuit-list-block/objects.list-block";
-// @import "../../bower_components/inuit-list-block/objects.list-ui";
+@import "../../bower_components/inuit-list-ui/objects.list-ui";
 @import "../../bower_components/inuit-buttons/objects.buttons";
-// @import "../../bower_components/inuit-buttons/objects.tabs";
+@import "../../bower_components/inuit-tabs/objects.tabs";
 
 // Trumps
 @import "../../bower_components/inuit-widths/trumps.widths";
@@ -215,3 +215,5 @@
 @import "plugins";                                  // Classes dedicated to elements manipulated or created by JS plugins
 
 @import "specific-page";                            // If a page needs a specifi set of styles, create a specific style sheet
+
+@import "inuit-demo";
