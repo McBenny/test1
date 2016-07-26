@@ -33,7 +33,6 @@
          */
 /**
  *      - CSSWizardry           FIND_CSS_WIZARDRY
- *          .grid--center       FIND_GRID_CENTER
  *      - Font-Family           FIND_FONT_FAMILY
  *      - font-size rewritten   FIND_FONT_SIZE
  *      - Border-radius         FIND_BORDER_RADIUS
@@ -71,30 +70,6 @@ $use-silent-classes: false !default;
 *       => https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L146-L156
 */
 $class-type: if($use-silent-classes, unquote("%"), unquote("."));
-
-
-
-//  FIND_GRID_CENTER
-        /* 
-             dP""b8 88""Yb 88 8888b.            dP""b8 888888 88b 88 888888 888888 88""Yb 
-            dP   `" 88__dP 88  8I  Yb ________ dP   `" 88__   88Yb88   88   88__   88__dP 
-            Yb  "88 88"Yb  88  8I  dY """""""" Yb      88""   88 Y88   88   88""   88"Yb  
-             YboodP 88  Yb 88 8888Y"            YboodP 888888 88  Y8   88   888888 88  Yb 
-         */
-/**
-* Centered grids align grid items centrally without needing to use push or pull
-* classes. Extends `.grid`.
-*       => https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss#L296-L306
-*/
-#{$class-type}grid--center {
-    text-align:center;
-
-    > #{$class-type}grid__item {
-        text-align:left;
-    }
-}
-
-
 
 
 

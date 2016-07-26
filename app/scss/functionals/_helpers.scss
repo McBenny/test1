@@ -39,7 +39,7 @@
  *      - Zebras                FIND_ZEBRA
  *      - Split                 FIND_SPLIT
  *      - Text-related          FIND_TEXT
- *          .reversed           FIND_TXT_REVERSED
+ *          .inverted           FIND_TXT_INVERTED
  */
 
 
@@ -129,17 +129,17 @@
  */
 /**
  *  Usage:
-        <div class="zebramix">
-            <div class="zebra">one</div>
-            <div class="zebra">two</div>
-            <div class="zebra zebra--force">three FORCE</div>
-            <div class="zebra zebra--force">four</div>
-            <div class="zebra">five</div>
-            <div class="zebra">six</div>
-            <div class="zebra">seven</div>
-            <div class="zebra zebra--resist">eight RESIST</div>
-            <div class="zebra">nine</div>
-            <div class="zebra">ten</div>
+        <div class="zebra">
+            <div class="zebra__item">one</div>
+            <div class="zebra__item">two</div>
+            <div class="zebra__item zebra__item--force">three FORCE</div>
+            <div class="zebra__item zebra__item--force">four</div>
+            <div class="zebra__item">five</div>
+            <div class="zebra__item">six</div>
+            <div class="zebra__item">seven</div>
+            <div class="zebra__item zebra__item--resist">eight RESIST</div>
+            <div class="zebra__item">nine</div>
+            <div class="zebra__item">ten</div>
         </div>
 
     Produces:
@@ -154,8 +154,8 @@
                     nine
             ########ten
  */
-.zebramix {
-    .zebra {
+.zebra {
+    > &__item {
         &:nth-child(even),
         &--force {
             background: colors(bg--2);
@@ -189,12 +189,12 @@
  */
 .split {
     text-align: right;
-    .split__left {
+    &__title {
         float: left;
         clear: left;
         text-align: left;
     }
-    .split__right {
+    &__data {
         margin: 0;
     }
 }
@@ -217,13 +217,13 @@
                                                                                                               
                                                                                                               
  */
-//  FIND_TXT_REVERSED
-        /* 
-            88""Yb 888888 Yb    dP 888888 88""Yb .dP"Y8 888888 8888b.  
-            88__dP 88__    Yb  dP  88__   88__dP `Ybo." 88__    8I  Yb 
-            88"Yb  88""     YbdP   88""   88"Yb  o.`Y8b 88""    8I  dY 
-            88  Yb 888888    YP    888888 88  Yb 8bodP' 888888 8888Y"  
+//  FIND_TXT_INVERTED
+        /*
+            88 88b 88 Yb    dP 888888 88""Yb 888888 888888 8888b.
+            88 88Yb88  Yb  dP  88__   88__dP   88   88__    8I  Yb
+            88 88 Y88   YbdP   88""   88"Yb    88   88""    8I  dY
+            88 88  Y8    YP    888888 88  Yb   88   888888 8888Y"
          */
-.text--rev {
+.text--inv {
     color: colors(bg)!important;
 }
