@@ -25,7 +25,31 @@
                                                   ppppppppp
 
 */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+/**
+ *      - Variables             FIND_VARS
+ *      - Assets                FIND_ASSETS 
+ *      - Javascript            FIND_JS
+ *      - Sass                  FIND_SASS
+ *      - Main tasks            FIND_MAIN
+ */
 
+
+
+
+
+//  FIND_VARS
+/*
+    Yb    dP    db    88""Yb 88    db    88""Yb 88     888888 .dP"Y8
+     Yb  dP    dPYb   88__dP 88   dPYb   88__dP 88     88__   `Ybo."
+      YbdP    dP__Yb  88"Yb  88  dP__Yb  88""Yb 88  .o 88""   o.`Y8b
+       YP    dP""""Yb 88  Yb 88 dP""""Yb 88oodP 88ood8 888888 8bodP'
+*/
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -38,6 +62,9 @@ var gulp = require('gulp'),
 
 
 
+
+
+//  FIND_ASSETS
 /*
        db    .dP"Y8 .dP"Y8 888888 888888 .dP"Y8
       dPYb   `Ybo." `Ybo." 88__     88   `Ybo."
@@ -57,6 +84,9 @@ gulp.task('assets', function () {
 
 
 
+
+
+//  FIND_JS
 /*
      88888 .dP"Y8     888888    db    .dP"Y8 88  dP .dP"Y8
         88 `Ybo."       88     dPYb   `Ybo." 88odP  `Ybo."
@@ -78,7 +108,6 @@ gulp.task('js:compile', function () {
                 './app/scripts/functionals/helpers.js',
                 './app/scripts/functionals/functions.js',
                 './app/scripts/general.js',
-                './app/scripts/appart.js',
                 './app/scripts/**/*.js'
             ]
         )
@@ -110,6 +139,9 @@ gulp.task('js:prod', ['js:uglify'], function () {});
 
 
 
+
+
+//  FIND_SASS
 /*
     .dP"Y8    db    .dP"Y8 .dP"Y8     888888    db    .dP"Y8 88  dP .dP"Y8
     `Ybo."   dPYb   `Ybo." `Ybo."       88     dPYb   `Ybo." 88odP  `Ybo."
@@ -148,6 +180,7 @@ gulp.task('sass:prod', ['sass:minify'], function () {});
 
 
 
+//  FIND_MAIN
 /*
     8b    d8    db    88 88b 88     888888    db    .dP"Y8 88  dP .dP"Y8
     88b  d88   dPYb   88 88Yb88       88     dPYb   `Ybo." 88odP  `Ybo."

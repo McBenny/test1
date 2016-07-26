@@ -283,8 +283,12 @@ $socials = array(
  */
 $head__css__prepend = array();
 $head__css__list = array(
-    array(
+    'dev' => array(
         'path' => $path.'/css/styles.css',
+        'media' => 'screen'
+    ),
+    'prod' => array(
+        'path' => $path.'/css/styles.min.css',
         'media' => 'screen'
     )
 );
@@ -322,8 +326,14 @@ $head__css__append = array();
  */
 $foot__js__prepend = array();
 $foot__js__list = array(
-    $path.'/scripts/vendors.js',
-    $path.'/scripts/main.js'
+    'dev' => array(
+      $path.'/scripts/vendors.js',
+      $path.'/scripts/main.js'
+    ),
+    'prod' => array(
+      $path.'/scripts/vendors.min.js',
+      $path.'/scripts/main.min.js'
+    )
 );
 $foot__js__append = array();
 
@@ -353,7 +363,7 @@ $foot__js__append = array();
                YP    dP""""Yb 88  Yb 88 dP""""Yb 88oodP 88ood8 888888 8bodP' 
         */
 $devvars = array(
-    'dev' => true,
+    'dev' => true,                          // Set to true to call minified styles and js
     'log' => '',
     'pageList' => array(
         array(

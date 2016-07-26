@@ -1,7 +1,8 @@
 <?php
 include('foot__analytics.php');
 
-$foot__js__list = $foot__js__prepend + $foot__js__list + $foot__js__append;
+$actual__foot__js__list = $devvars['dev'] ? $foot__js__list['dev'] : $foot__js__list['prod'];
+$foot__js__list = $foot__js__prepend + $actual__foot__js__list + $foot__js__append;
 
 foreach ($foot__js__list AS $key => $value) {
 ?>

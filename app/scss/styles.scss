@@ -91,50 +91,50 @@
             88 88  Y8 `YbodP' 88   88   8bodP'   88   `YbodP' 88     88
          */
 // Settings
-@import "../../bower_components/inuit-defaults/settings.defaults";
-@import "../../bower_components/inuit-responsive-settings/settings.responsive";
+@import "../../bower_components/inuit-defaults/settings.defaults";                  // Mandatory
+@import "../../bower_components/inuit-responsive-settings/settings.responsive";     // Mandatory if responsive
 
 // Tools
-@import "../../bower_components/inuit-functions/tools.functions";
-@import "../../bower_components/inuit-mixins/tools.mixins";
-@import "../../bower_components/inuit-responsive-tools/tools.responsive";
+@import "../../bower_components/inuit-functions/tools.functions";                   // Mandatory
+@import "../../bower_components/inuit-mixins/tools.mixins";                         // Mandatory
+@import "../../bower_components/inuit-responsive-tools/tools.responsive";           // Mandatory if responsive
 @import "../../bower_components/inuit-tools-widths/tools.widths";
 
 // Generic
-@import "../../bower_components/inuit-normalize.css/generic.normalize";
-@import "../../bower_components/inuit-box-sizing/generic.box-sizing";
+@import "../../bower_components/inuit-normalize.css/generic.normalize";             // Mandatory
+@import "../../bower_components/inuit-box-sizing/generic.box-sizing";               // Mandatory
 @import "../../bower_components/inuit-reset/generic.reset";
 // @import "../../bower_components/inuit-shared/generic.shared";
 
 // Base
-@import "../../bower_components/inuit-page/base.page";
-@import "../../bower_components/inuit-paragraphs/base.paragraphs";
+@import "../../bower_components/inuit-page/base.page";                              // Mandatory
 @import "../../bower_components/inuit-headings/base.headings";
-@import "../../bower_components/inuit-lists/base.lists";
 @import "../../bower_components/inuit-images/base.images";
+@import "../../bower_components/inuit-lists/base.lists";
+@import "../../bower_components/inuit-paragraphs/base.paragraphs";
 
 // Objects
-@import "../../bower_components/inuit-layout/objects.layout";
 @import "../../bower_components/inuit-block/objects.block";
-@import "../../bower_components/inuit-media/objects.media";
-@import "../../bower_components/inuit-flag/objects.flag";
 @import "../../bower_components/inuit-box/objects.box";
-@import "../../bower_components/inuit-tables/objects.tables";
-@import "../../bower_components/inuit-pack/objects.pack";
-@import "../../bower_components/inuit-list-bare/objects.list-bare";
-@import "../../bower_components/inuit-list-inline/objects.list-inline";
-@import "../../bower_components/inuit-list-block/objects.list-block";
-@import "../../bower_components/inuit-list-ui/objects.list-ui";
 @import "../../bower_components/inuit-buttons/objects.buttons";
+@import "../../bower_components/inuit-flag/objects.flag";
+@import "../../bower_components/inuit-layout/objects.layout";
+@import "../../bower_components/inuit-list-bare/objects.list-bare";
+@import "../../bower_components/inuit-list-block/objects.list-block";
+@import "../../bower_components/inuit-list-inline/objects.list-inline";
+@import "../../bower_components/inuit-list-ui/objects.list-ui";
+@import "../../bower_components/inuit-media/objects.media";
+@import "../../bower_components/inuit-pack/objects.pack";
 @import "../../bower_components/inuit-tabs/objects.tabs";
+@import "../../bower_components/inuit-tables/objects.tables";
 
 // Trumps
-@import "../../bower_components/inuit-widths/trumps.widths";
-@import "../../bower_components/inuit-widths-responsive/trumps.widths-responsive";
+@import "../../bower_components/inuit-clearfix/trumps.clearfix";
+@import "../../bower_components/inuit-headings-trumps/trumps.headings";
 @import "../../bower_components/inuit-spacing/trumps.spacing";
 @import "../../bower_components/inuit-spacing-responsive/trumps.spacing-responsive";
-@import "../../bower_components/inuit-headings-trumps/trumps.headings";
-@import "../../bower_components/inuit-clearfix/trumps.clearfix";
+@import "../../bower_components/inuit-widths/trumps.widths";
+@import "../../bower_components/inuit-widths-responsive/trumps.widths-responsive";
 
 
 

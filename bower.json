@@ -1,5 +1,5 @@
 {
-  "name": "Test 1",
+  "name": "test1",
   "authors": [
     "Ben Adam <ben@bang.com.au>"
   ],
@@ -10,7 +10,7 @@
     "inuitcss"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/McBenny/test1",
   "ignore": [
     "**/.*",
     "node_modules",
