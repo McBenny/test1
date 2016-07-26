@@ -28,7 +28,33 @@ Test of inuitcss implementation
 - .alpha, .beta, .gamma, .delta, .epsilon, .zeta
 - .clearfix
 
-Personal additions
+##Personal additions
 - zebra, .zebra__item, .zebra__item--force, .zebra__item--resist
 - .split, .split__title, .split__data
 - .text--inv
+
+##Missing classes from inuitcss
+- .form-fields, .text-input, .label, .additional, .check-list, .check-label, .spoken-form, .extra-help
+- .cf => replaced by .clearfix
+- .accessibility..., .visibility...
+- .nav, .options, .pagination, .breadcrumb, .block-list, .matrix... => replaced by list-inline, .list-ui, .tabs...
+- .island, .islet, .greybox
+- .marginalia, .this-or-this
+- .multi-list, .line-numbers, .numbered-list
+- .stat-group
+- .landmark
+- .giga, .mega, .kilo, .smallprint, .milli, .micro
+- .lead, .source, .code-comment, .informative, .muted, .proceed, .caps
+- .img--right, .img--center, .img--left, .img--rounded, .img--short, .img--medium, .img--tall
+- .one-whole, .two-thirds... => replaced by .u-1/1...
+- .t5, .t10, .t12, .t15; .t20, .t25, .t30, .t33, .t35, .t37, .t40, .t45, .t50, .t55, .t60, .t62, .t65, .t66, .t70, .t75, .t80, .t85, .t87, .t90, .t95
+- .table--bordered, .table--striped, .table--data
+- .grid... => replaced by .layout
+- .flexbox, .flexbox__item
+- .text-cols--2, .text-cols--3, .text-cols--4, .text-cols--5
+- .link-complex, .fly-out, .icon, .go
+- .btn--inactive, .btn--primary, .btn--secondary, .btn--tertiary, .btn--positive, .btn--negative, .btn--natural, .btn--soft, .btn--hard, .pill, .loz
+- .rule, .stat-group,
+- .brand...
+- .float--..., .text--..., .weight--...
+- .push, .flush, .soft, .hard... => replaced by .m... and .p...
