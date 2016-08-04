@@ -43,6 +43,8 @@
  */
 
 
+var customFunctions = function () {
+
 
 //  FIND_DESIGN
 /*
@@ -62,14 +64,14 @@
     This function finishes design
     var "design" is a generic brick to insert into the dom to obtain additional elements only required to achieve design effects.
 */
-var finishDesign = function () {
-    var design = "<span class=\"design\" />";
+    var finishDesign = function () {
+        var design = "<span class=\"design\" />";
 
-//  _functions.sizesEgalizer(".teasers", ".teasers__item");
+//      _functions.sizesEgalizer(".teasers", ".teasers__item");
 
-    return true;
-}
-var toto = 1;
+        return true;
+    }
+
 
 
 //  FIND_BEHAVIOUR
@@ -89,9 +91,26 @@ var toto = 1;
 /*
     This function intercepts natural behaviour to enhance user experience
 */
-enhanceBehaviour = function () {
+    enhanceBehaviour = function () {
 
-//  _functions.enlargeClick("nav > ul > li");
+//      _functions.enlargeClick("nav > ul > li");
 
-    return true;
-};
+        return true;
+    };
+
+
+
+// Public elements :
+    return {
+        finishDesign: finishDesign,
+        enhanceBehaviour: enhanceBehaviour
+    };
+}();
+
+
+
+$(window).on("load", function () {
+    // _base.responsiveness();
+    // customFunctions.finishDesign();
+    // _functions.scrollToElt();
+});

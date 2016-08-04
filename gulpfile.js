@@ -94,7 +94,12 @@ gulp.task('assets', function () {
     "bodP' 8bodP'       88   dP""""Yb 8bodP' 88  Yb 8bodP'
 */
 gulp.task('js:vendors', function () {
-    return gulp.src(['bower_components/jquery/dist/jquery.js', './vendor/scripts/*.js'])
+    return gulp.src([
+        'bower_components/jquery/dist/jquery.js',
+        // './vendor/scripts/jquery.cycle2.min.js',
+        // './vendor/scripts/jquery.cycle2.carousel.min.js',
+        './vendor/scripts/*.js'
+      ])
         .pipe(sourcemaps.init())
         .pipe(concat('vendors.js'))
         .pipe(sourcemaps.write('./'))
@@ -157,14 +162,19 @@ gulp.task('sass:compile', function () {
         .pipe(livereload());
 });
 
-gulp.task('sass:minify', ['sass:compile'], function () {
+gulp.task('sass:compile-prod', function () {
+    return gulp.src(['./app/scss/**/*.scss'])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./public/css'))
+        .pipe(livereload());
+});
+
+gulp.task('sass:minify', ['sass:compile-prod'], function () {
     return gulp.src(['./public/css/*.css', '!./public/css/*.min.css'])
-        .pipe(sourcemaps.init())
         .pipe(cleanCSS())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css'));
 });
 

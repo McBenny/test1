@@ -280,19 +280,21 @@ var _functions = function() {
 /* 3 */     $(document).on("mousewheel DOMMouseScroll", function (f) {
                 f.preventDefault();
             });
-/* 4 */     $(documentBody).animate(
-                {
-                    scrollTop: $(lnk).offset().top
-                },
-                {
-                    duration: 2000,
-/*4.1*/             easing: "easeOutExpo",
-                    complete: function () {
-/*4.2*/                 $(document).off("mousewheel DOMMouseScroll");
-/*4.3*/                 window.location.hash = lnk;
+            if ($(lnk).length > 0) {
+/* 4 */         $(documentBody).animate(
+                    {
+                        scrollTop: $(lnk).offset().top
+                    },
+                    {
+                        duration: 2000,
+/*4.1*/                 easing: "easeOutExpo",
+                        complete: function () {
+/*4.2*/                     $(document).off("mousewheel DOMMouseScroll");
+/*4.3*/                     window.location.hash = lnk;
+                        }
                     }
-                }
-            );
+                );
+            }
             e.preventDefault();
         });
     },
@@ -508,7 +510,7 @@ var _functions = function() {
             }
         });
         return false;
-    };
+    },
 
 
 

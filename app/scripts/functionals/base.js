@@ -36,6 +36,7 @@
  *          .Console            FIND_CONSOLE
  *          .Variables          FIND_VARS
  *          .Translations       FIND_TRANSLATIONS
+ *      - Responsiveness        FIND_RESPONSIVE
  *      - Public return         FIND_PUBLIC
  *      
  */
@@ -120,6 +121,13 @@ var _base = function () {
         customData: {},
         pageLng: $("html").attr("lang") !== undefined && $("html").attr("lang") !== "" ? $("html").attr("lang") : "default",
         touch: false,
+        width: {
+            "palm": [0, 720],
+            "lap": [720, 1024],
+            "portable": [0, 1024],
+            "lap-and-up": [720, 10000],
+            "desk": [1024, 10000]
+        }
         socials: {
             instagram: {
                 client_id: '',
@@ -155,6 +163,52 @@ var _base = function () {
 
 
 
+//  FIND_RESPONSIVE
+/*
+    88""Yb 888888 .dP"Y8 88""Yb  dP"Yb  88b 88 .dP"Y8 88 Yb    dP 888888 88b 88 888888 .dP"Y8 .dP"Y8
+    88__dP 88__   `Ybo." 88__dP dP   Yb 88Yb88 `Ybo." 88  Yb  dP  88__   88Yb88 88__   `Ybo." `Ybo."
+    88"Yb  88""   o.`Y8b 88"""  Yb   dP 88 Y88 o.`Y8b 88   YbdP   88""   88 Y88 88""   o.`Y8b o.`Y8b
+    88  Yb 888888 8bodP' 88      YbodP  88  Y8 8bodP' 88    YP    888888 88  Y8 888888 8bodP' 8bodP'
+*/
+    responsiveness = function () {
+        var winW = $(window).width(),
+            winWTmp = winW;
+            sector = null,
+            sectorTmp = '',
+            detectWidth = function () {
+                winWTmp = $(window).width();
+                if (winWTmp !== winW || sectorTmp === '') {
+                    winW = winWTmp;
+                    if (winW >= vars.widths.palm[0] && winW < vars.widths.palm[1]) {
+                        sectorTmp = 'palm';
+                    }
+                    if (winW >= vars.widths.lap[0] && winW < vars.widths.lap[1]) {
+                        sectorTmp = 'lap';
+                    }
+                    if (winW >= vars.widths.desk[0]) {
+                        sectorTmp = 'desk';
+                    }
+                }
+                if (sectorTmp !== sector) {
+                    sector = sectorTmp;
+                    $(document).trigger(sector + '-enter');
+                }
+            };
+        if (sector === null) {
+            detectWidth();
+            if (winW < vars.widths.desk[0]) {
+                if (winW < vars.widths.lap[0]) {
+                    sector = 'palm';
+                } else {
+                    sector = 'lap';
+                }
+            }
+        }
+        $(window).resize(detectWidth);
+    },
+
+
+
 
 
 //  FIND_PUBLIC
@@ -166,6 +220,7 @@ var _base = function () {
         */
     return {
         vars: vars,
-        translations: translations
+        translations: translations,
+        responsiveness: responsiveness
     };
 }();

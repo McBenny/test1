@@ -69,8 +69,9 @@
                                                                                  
                                                                                  
  */
-.form-fields {
-
+.form-fields,
+fieldset {
+    border: 0;
 }
 .spoken-form {
 
