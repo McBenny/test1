@@ -169,17 +169,6 @@
                                                                                                               
                                                                                                               
  */
-//  FIND_SPRITES
-        /* 
-            .dP"Y8 88""Yb 88""Yb 88 888888 888888 .dP"Y8 
-            `Ybo." 88__dP 88__dP 88   88   88__   `Ybo." 
-            o.`Y8b 88"""  88"Yb  88   88   88""   o.`Y8b 
-            8bodP' 88     88  Yb 88   88   888888 8bodP' 
-         */
-//@import "sprite";                                 // Automatic generation by grunt/brunch task
-
-
-
 //  FIND_FONTS
         /* 
             888888  dP"Yb  88b 88 888888 .dP"Y8 
@@ -217,3 +206,15 @@
 @import "specific-page";                            // If a page needs a specifi set of styles, create a specific style sheet
 
 @import "inuit-demo";
+
+
+
+
+//  FIND_SPRITES
+        /* 
+            .dP"Y8 88""Yb 88""Yb 88 888888 888888 .dP"Y8 
+            `Ybo." 88__dP 88__dP 88   88   88__   `Ybo." 
+            o.`Y8b 88"""  88"Yb  88   88   88""   o.`Y8b 
+            8bodP' 88     88  Yb 88   88   888888 8bodP' 
+         */
+@import "sprites";                                  // If you generate sprites...

@@ -58,6 +58,7 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     pump = require('pump'),
+    spritesmith = require('gulp.spritesmith'),
     livereload = require('gulp-livereload');
 
 
@@ -179,12 +180,39 @@ gulp.task('sass:minify', ['sass:compile-prod'], function () {
 });
 
 gulp.task('sass', function () {
-    gulp.watch(['./app/scss/**/*.scss'], ['sass:compile']);
+    gulp.watch(['./app/scss/**/*.scss', './app/assets/css/*.css'], ['sass:compile']);
     console.log('       Sass watch running...');
     console.log('       Ctrl + C to stop.');
 });
 
 gulp.task('sass:prod', ['sass:minify'], function () {});
+
+
+
+
+
+//  FIND_SPRITES
+/*
+  .dP"Y8 88""Yb 88""Yb 88 888888 888888 .dP"Y8
+  `Ybo." 88__dP 88__dP 88   88   88__   `Ybo."
+  o.`Y8b 88"""  88"Yb  88   88   88""   o.`Y8b
+  8bodP' 88     88  Yb 88   88   888888 8bodP'
+*/
+gulp.task('sprites:generate', function () {
+    var spriteData = gulp.src('./app/img/sprites/*.png')
+        .pipe(spritesmith({
+            imgName: 'images/sprites.png',
+            cssName: '_sprites.css'
+        }));
+    spriteData.img.pipe(gulp.dest('./app/assets/css/images'));
+    spriteData.css.pipe(gulp.dest('./app/scss'));
+});
+
+gulp.task('sprites', function () {
+    gulp.watch(['./app/img/sprites/**/*.png'], ['sprites:generate']);
+    console.log('       Sprites watch running...');
+    console.log('       Ctrl + C to stop.');
+});
 
 
 
@@ -203,7 +231,7 @@ gulp.task('prod', ['js:prod', 'sass:prod'], function () {
     console.log('    - Concatenating Javascripts and minifying.');
 });
 
-gulp.task('default', ['assets', 'js', 'sass'], function () {
+gulp.task('default', ['assets', 'js', 'sprites', 'sass'], function () {
     livereload.listen({
         reloadPage: "index.php"
     });
