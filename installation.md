@@ -46,7 +46,8 @@ This command will take the **[package.json](package.json)** file that lists all 
 * **gulp-clean-css** and **gulp-minify-css**, to handle Stylesheets,
 * **gulp-concat**, **gulp-minify** and **gulp-uglify** to manipulate Javascript,
 * **gulp-rename**, **pump** to handle files,
-* **gulp-livereload** and **gulp-sourcemaps** to handle enhance browser experience.
+* **gulp-livereload** and **gulp-sourcemaps** to handle enhance browser experience,
+* **gulp-spritesmith** to generate sprites from your individual images.
 
 In order to benefit from the **gulp-libereload** plug-in, you will need to also install the [Livereload](http://livereload.com) Chrome plug-in. It will make Chrome listen to any change signaled by Gulp and thus automatically reload the page you're on.
 
@@ -79,6 +80,7 @@ This project uses a default file tree as follows:
 
 - app
 	- assets
+	- img
 	- scripts
 	- scss
 - public
@@ -88,6 +90,7 @@ This project uses a default file tree as follows:
 
 ###/app
 This directory is your **one and only** working directory.
+
 ####/app/assets
 The content of this directory will simply be copied into the **/public** directory as-is. It can be seen as a mirror of the public directory. Everything you need to put into the public directory and that does not need to be treated by **Gulp** shall be put here.
 
@@ -104,6 +107,9 @@ So you will often find yourself with something like this:
 		- includes-html
 		- uploads
 		- ...
+
+####/app/img/sprites
+The content of this directory is all the individual images you wish to compile in one single sprite image. Just put your images here and `gulp sprites:generate` will create or update the sprites image and the related sprites stylesheet.
 
 ####/app/scripts
 This directory is intended to receive all your javascript files. Everything you put here will be compiled in one single **main.js** that will be copied in **/public/js/main.js**.

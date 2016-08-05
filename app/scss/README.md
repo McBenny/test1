@@ -15,7 +15,8 @@ In addition to **inuitcss**, many [style files](/app/scss/) are provided to orga
 * *header* and *footer* styles,
 * Styles for *navigation*, *pagination*, *search*,
 * *Titles* and *forms* styles,
-* *Social networks* and *plugins* related styles.
+* *Social networks* and *plugins* related styles,
+* a generated file, *sprites*, that holds the sprites styles.
 
 ######All these files are here as a guide, everything can be overriden, upscaled, changed, etc.
 
