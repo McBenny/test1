@@ -277,10 +277,10 @@ var _functions = function() {
 /* 2 */     var elt = $(this),
     /* a */     lnk = elt.attr("href") !== undefined ? elt.attr("href") : elt.data("href"),
                 documentBody = $("html, body");
-/* 3 */     $(document).on("mousewheel DOMMouseScroll", function (f) {
-                f.preventDefault();
-            });
-            if ($(lnk).length > 0) {
+            if ($(lnk).length > 0 && lnk.indexOf("#") === 0) {
+/* 3 */         $(document).on("mousewheel DOMMouseScroll", function (f) {
+                    f.preventDefault();
+                });
 /* 4 */         $(documentBody).animate(
                     {
                         scrollTop: $(lnk).offset().top
@@ -294,8 +294,8 @@ var _functions = function() {
                         }
                     }
                 );
+                e.preventDefault();
             }
-            e.preventDefault();
         });
     },
 
