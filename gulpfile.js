@@ -193,10 +193,10 @@ gulp.task('sass:prod', ['sass:minify'], function () {});
 
 //  FIND_SPRITES
 /*
-  .dP"Y8 88""Yb 88""Yb 88 888888 888888 .dP"Y8
-  `Ybo." 88__dP 88__dP 88   88   88__   `Ybo."
-  o.`Y8b 88"""  88"Yb  88   88   88""   o.`Y8b
-  8bodP' 88     88  Yb 88   88   888888 8bodP'
+    .dP"Y8 88""Yb 88""Yb 88 888888 888888 .dP"Y8
+    `Ybo." 88__dP 88__dP 88   88   88__   `Ybo."
+    o.`Y8b 88"""  88"Yb  88   88   88""   o.`Y8b
+    8bodP' 88     88  Yb 88   88   888888 8bodP'
 */
 gulp.task('sprites:generate', function () {
     var spriteData = gulp.src('./app/img/sprites/*.png')
@@ -231,6 +231,15 @@ gulp.task('prod', ['js:prod', 'sass:prod'], function () {
     console.log('    - Concatenating Javascripts and minifying.');
 });
 
+gulp.task('init', ['assets:copy', 'js:vendors', 'js:compile', 'sass:compile'], function () {
+    console.log('What Gulp initialization does:');
+    console.log('    - Copy static files into /public,');
+    console.log('    - Assemble vendors scripts,');
+    console.log('    - Create the main javascript file,');
+    console.log('    - Create the main stylesheet.');
+    console.log('It doesn\'t watch anything. If you want to change things and see your updates, run \'gulp\'.');
+});
+
 gulp.task('default', ['assets', 'js', 'sprites', 'sass'], function () {
     livereload.listen({
         reloadPage: "index.php"
@@ -238,5 +247,5 @@ gulp.task('default', ['assets', 'js', 'sprites', 'sass'], function () {
     console.log('Default task running...');
     console.log('    - Assets watching,');
     console.log('    - Sass watching,');
-    console.log('    - Javascript watching');
+    console.log('    - Javascript watching.');
 });
