@@ -42,7 +42,8 @@ if ($dev) {
 
 <h1>This is the homepage</h1>
 
-<?php include ($path.'/'.$varSite['includes'].'/inuit-demo__buttons.php'); ?>
+<?php include ($path.'/'.$varSite['includes'].'/inuit-demo__layout.php'); ?>
+<?php include ($path.'/'.$varSite['includes'].'/inuit-demo__spacing.php'); ?>
 
 <?php /*include ($path.'/'.$varSite['includes'].'/header.php');*/ ?>
 

@@ -127,7 +127,7 @@ var _base = function () {
             "portable": [0, 1024],
             "lap-and-up": [720, 10000],
             "desk": [1024, 10000]
-        }
+        },
         socials: {
             instagram: {
                 client_id: '',
@@ -205,7 +205,7 @@ var _base = function () {
             }
         }
         $(window).resize(detectWidth);
-    },
+    };
 
 
 
