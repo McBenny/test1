@@ -34,6 +34,7 @@
 /**
  *      - Design related        FIND_DESIGN
  *          .Basic behaviours   FIND_BEHAVIOUR
+ *          .Pop-ins            FIND_POPIN
  *          .Size egalizer      FIND_SIZEEGALIZER
  *      - Interactivity         FIND_INTERACTIVITY
  *          .Enlarge click      FIND_ENLARGECLICK
@@ -153,6 +154,43 @@ var _functions = function() {
                 }
                 e.preventDefault();
             });
+    },
+
+
+
+//  FIND_POPIN
+        /*
+            88""Yb  dP"Yb  88""Yb 88 88b 88
+            88__dP dP   Yb 88__dP 88 88Yb88
+            88"""  Yb   dP 88"""  88 88 Y88
+            88      YbodP  88     88 88  Y8
+        */
+    handlePopins = function () {
+        var btn = $('<a href="#" class="popin__btn">Close</a>'),
+            closePopin = function (e) {
+                e.preventDefault();
+                $('.popin').fadeOut('fast', function () {
+                    $('.popin__overlay').fadeOut('fast');
+                });
+            };
+        $('.popin').append(btn);
+        $('.popin__btn, .popin__overlay').on('click', closePopin);
+        $('.js--popin').on('click', function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href'));
+            if ($target.length > 0) {
+                var h = $target.outerHeight(),
+                    screenH = $(window).height(),
+                    top = ((screenH - h) / 2) >= 0 ? (screenH - h) / 2 : 0;
+                $('.popin__overlay').fadeIn(400, function () {
+                    $target
+                        .css({
+                            top: top
+                        })
+                        .fadeIn(400);
+                });
+            }
+        })
     },
 
 
